@@ -1,5 +1,5 @@
 .mechanisms {
-  padding: 22px 42px 20px;
+  padding-bottom: 42px;
 }
 
 .mechanisms__title {
@@ -14,4 +14,14 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 153px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
