@@ -1,5 +1,33 @@
+.products {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+
 .products__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: grid;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 59px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 63px 80px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .products__item {
+    background-color: @grey-light;
+  }
 }
 
 .products__title {

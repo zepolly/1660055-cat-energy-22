@@ -11,4 +11,11 @@
 .contacts-owner__list {
   list-style: none;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
