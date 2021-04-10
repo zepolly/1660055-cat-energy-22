@@ -3,11 +3,17 @@
   margin-right: -20px;
   padding: 20px 25px 20px;
   background-color: @silver;
-  display: flex;
-  flex-direction: column;
 
   @media (min-width: @desktop-width) {
+    display: flex;
+    padding: 0 110px;
     flex-direction: row;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__wrapper {
+    margin: 0 auto;
   }
 }
 
