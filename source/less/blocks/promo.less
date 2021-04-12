@@ -5,7 +5,6 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    margin-left: 83px;
     text-align: left;
     color: @black;
   }
@@ -13,6 +12,7 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 115px;
   }
 }
 
@@ -23,9 +23,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 0 160px 300px 160px;
-  margin-left: -20px;
-  margin-right: -20px;
 
   @media (min-width: @tablet-width) {
     background-image: none;
@@ -40,6 +37,7 @@
 }
 
 .promo__wrapper {
+  margin-left: auto;
   height: 500px;
 }
 
