@@ -3,4 +3,21 @@
   padding: 0;
   list-style: none;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.site-list__item {
+  display: block;
+  padding: 22px 70px;
+  border-top: 1px solid @silver-extra-light;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }

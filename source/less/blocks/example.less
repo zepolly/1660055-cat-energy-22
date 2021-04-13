@@ -1,6 +1,12 @@
 .example {
-  padding: 22px 25px 20px;
   background-color: @silver;
+}
+
+@media (min-width: @desktop-width) {
+  .example__container {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .example__title {

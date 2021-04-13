@@ -1,8 +1,21 @@
 .form-info {
   margin-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .form-info__list {
+  margin-bottom: 49px;
+  padding: 0;
   list-style: none;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 72px;
+  }
 }

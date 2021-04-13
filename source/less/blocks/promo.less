@@ -1,13 +1,53 @@
 .promo {
-  padding: 1px 35px 125px 35px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   color: @white;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 115px;
+    text-align: left;
+    color: @black;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 115px;
+  }
+}
+
+.promo::before {
+  content: "";
+  display: block;
   background-color: @green;
   background-image: url("../img/cat-green.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+
+  @media (max-width: @mobile-width-only) {
+    width: 100%;
+    height: 302px;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+    background-color: inherit;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @green;
+    background-image: url("../img/cat-green.jpg");
+    order: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__wrapper {
+    margin-left: auto;
+  }
 }
 
 .promo__title {
@@ -17,4 +57,17 @@
 
 .promo__subtitle {
   line-height: 14px;
+}
+
+.promo__link {
+  display: block;
+  color: @white;
+  text-transform: uppercase;
+  background-color: @green;
+  padding: 7px 44px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 50px;
+    width: 244px;
+  }
 }
