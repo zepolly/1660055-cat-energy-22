@@ -8,11 +8,16 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    width: 440px;
     flex-direction: row;
   }
+}
 
-  @media (min-width: @desktop-width) {
-    width: 478px;
+.site-list__item {
+  display: block;
+  padding: 22px 70px;
+  border-top: 1px solid @silver-extra-light;
+
+  @media (min-width: @tablet-width) {
+    border: none;
   }
 }
