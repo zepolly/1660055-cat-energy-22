@@ -5,19 +5,20 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="page-body">
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="index.html" width="34" height="38" alt="Логотип Кэт Энерджи">
-      </a>
-      <a class="page-header__logo-label">
-        <img class="page-header__logo-image" src="index.html" width="34" height="38" alt="Кэт Энерджи">
-      </a>
+      <div class="container">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="" width="34" height="38" alt="Логотип Кэт Энерджи">
+        </a>
+        <a class="page-header__logo-label">
+          <img class="page-header__logo-image" src="" width="34" height="38" alt="Кэт Энерджи">
+        </a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -36,7 +37,7 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="page-main container">
 
       <h1 class="page-main__title">Каталог продукции</h1>
 
@@ -176,12 +177,12 @@
             </table>
             <a class="products__link" href="#">Заказать</a>
           </li>
+          <li>
+            <h3 class="products__title-all">Показать еще 100500 товаров</h3>
+            <p class="products__subtitle-all">На самом деле вкусов гораздо больше!</p>
+            <a class="products__link products__link--show" href="#">показать все</a>
+          </li>
         </ul>
-        <div>
-          <h3 class="products__title-all">Показать еще 100500 товаров</h3>
-          <p class="products__subtitle-all">На самом деле вкусов гораздо больше!</p>
-          <a class="products__link products__link--show" href="#">показать все</a>
-        </div>
       </section>
 
       <section class="additional-products">
@@ -241,14 +242,18 @@
 
     <footer class="page-footer">
 
-      <section class="contacts contacts__wrapper">
-        <h2 class="visually-hidden">Контакты для сотрудничества дилеров</h2>
-        <p class="contacts__welcome">приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <section class="contacts">
+        <div class="contacts__wrap container">
+          <div class="contacts__container">
+            <h2 class="visually-hidden">Контакты для сотрудничества дилеров</h2>
+            <p class="contacts__welcome">приглашаем к сотрудничеству дилеров!</p>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          </div>
+        </div>
         <iframe class="contacts__card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586862!2d30.320853351715883!3d59.93871648178723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1616857077609!5m2!1sru!2sru" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
-      </section>
+        </section>
 
-      <div class="page-footer__container">
+      <div class="page-footer__container container">
         <a class="page-footer__logo-label">
           <img class="page-footer__logo-image" src="" width="34" height="38" alt="Кэт Энерджи">
         </a>
