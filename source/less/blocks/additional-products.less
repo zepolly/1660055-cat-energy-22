@@ -40,14 +40,13 @@
 .additional-products__list-info {
   display: flex;
   flex-direction: column;
-
-  @media (min-width: @tablet-width) {
-    width: 100%;
-  }
 }
 
-@media (min-width: @desktop-width) {
-  .additional-products__item {
+.additional-products__item {
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
     display: flex;
     justify-content: space-between;
   }
