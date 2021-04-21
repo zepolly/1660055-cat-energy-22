@@ -1,5 +1,6 @@
 .page-header {
   position: relative;
+  background-color: transparent;
   margin: 0;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -14,5 +15,14 @@
   @media (min-width: @desktop-width) {
     max-width: 1200px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header-index {
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    width: 1200px;
   }
 }

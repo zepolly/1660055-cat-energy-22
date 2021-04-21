@@ -15,6 +15,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 115px;
+    z-index: 0;
   }
 }
 
@@ -38,6 +39,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    height: 694px;
     background-color: @green;
     background-image: url("../img/cat-green.jpg");
     order: 2;
@@ -47,6 +49,7 @@
 @media (min-width: @desktop-width) {
   .promo__wrapper {
     margin-left: auto;
+    margin-top: 150px;
   }
 }
 
