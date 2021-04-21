@@ -1,5 +1,4 @@
 .additional-products {
-  margin-bottom: 34px;
   color: @black;
 }
 
@@ -15,8 +14,9 @@
   flex-direction: column;
 
   @media (min-width: @desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    gap: 79px;
   }
 }
 
@@ -44,9 +44,12 @@
   @media (min-width: @tablet-width) {
     width: 100%;
   }
+}
 
-  @media (min-width: @desktop-width) {
-    width: 896px;
+@media (min-width: @desktop-width) {
+  .additional-products__item {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
