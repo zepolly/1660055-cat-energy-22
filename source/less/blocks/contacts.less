@@ -13,6 +13,7 @@
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;
+    padding: 40px;
   }
 
   @media (min-width: @desktop-width) {
@@ -34,10 +35,26 @@
   color: @black-light;
   font-size: 16px;
   line-height: 18px;
+  margin-top: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 170px;
+    text-align: left;
+  }
 }
 
 .contacts__address {
   line-height: 20px;
+  margin-left: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 158px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
 }
 
 .contacts__card {

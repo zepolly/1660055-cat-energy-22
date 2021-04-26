@@ -11,14 +11,20 @@
 }
 
 .programs__item {
-  padding: 5px 33px 18px 20px;
+  position: relative;
+  padding: 5px 20px 18px 20px;
   margin-bottom: 20px;
   list-style: none;
-  background-color: @grey-light;
+  background-color: @grey-transparent;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 279px 53px 52px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 570px;
     margin-right: 80px;
+    padding: 0 40px 55px 52px;
   }
 }
 
@@ -29,18 +35,137 @@
 }
 
 .programs__item-title {
+  text-transform: uppercase;
+  margin-left: 70px;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 0;
+    margin-top: 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 162px;
+  }
+}
+
+.programs__item-description {
+  margin: 22px 0 23px 0;
+  padding-right: 13px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 24px 0 48px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 73px 0 23px 0;
+  }
 }
 
 .programs__item-link {
+  display: block;
+  padding-top: 15px;
+  border-top: 1px solid @grey;
+  text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   color: @black;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    border: none;
+    padding: 0;
+  }
+
+  &:active {
+    color: @black-transparent;
+  }
+}
+
+.programs__item-link-arrow {
+  margin-left: 15px;
+  width: 24px;
+  height: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 25px;
+  }
+
+  &:hover {
+    width: 32px;
+  }
+
+  &:active {
+    width: 32px;
+
+    line {
+      stroke: @black-transparent;
+    }
+
+    path {
+      fill: @black-transparent;
+    }
+  }
+}
+
+.programs__item-slim::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url("../img/cat-slim.svg");
+  width: 50px;
+  height: 53px;
+  top: 21px;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 211px;
+    background-size: contain;
+    top: 81px;
+    right: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 106px;
+    top: 41px;
+    right: 418px;
+  }
+}
+
+.programs__item-go::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url("../img/cat-go.svg");
+  width: 67px;
+  height: 50px;
+  top: 21px;
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 200px;
+    background-size: contain;
+    top: 81px;
+    right: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 134px;
+    height: 100px;
+    top: 47px;
+    right: 403px;
+  }
 }

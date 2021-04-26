@@ -11,10 +11,18 @@
     flex-direction: row;
     width: 440px;
     justify-content: space-between;
+    margin-top: 42px;
+    margin-left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: auto;
   }
 }
 
 .site-list__item {
+  margin-left: -20px;
+  margin-right: -20px;
   display: block;
   padding: 22px 70px;
   border-top: 1px solid @silver-extra-light;
@@ -28,6 +36,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     border: none;
     padding: 0;
 
