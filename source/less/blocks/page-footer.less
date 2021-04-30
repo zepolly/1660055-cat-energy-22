@@ -1,5 +1,5 @@
 .page-footer__container {
-  margin-top: -4px;
+  margin-top: -7px;
   background-color: @grey-transparent;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
 
 @media (min-width: @desktop-width) {
   .page-footer {
-    background-color: @grey-light;
+    background-color: @grey-transparent;
   }
 }
 
@@ -36,6 +36,23 @@
   &:active {
     path {
       fill: @green-light;
+      stroke: @green-light;
+    }
+  }
+}
+
+.social__item-link:last-child {
+  &:hover {
+    path {
+      fill: @white;
+      stroke: @green;
+    }
+  }
+
+  &:active {
+    path {
+      fill: @white;
+      stroke: @green-light;
     }
   }
 }

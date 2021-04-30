@@ -1,4 +1,5 @@
 .example {
+  position: relative;
   background-color: @silver;
 
   @media (min-width: @tablet-width) {
@@ -170,12 +171,29 @@
   width: 311px;
   height: 232px;
 
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    content: "";
+    left: 15%;
+    bottom: 30px;
+    width: 708px;
+    height: 620px;
+    z-index: 0;
+  }
+
   @media (min-width: @desktop-width) {
-    margin-top: 110px;
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: 120px;
+    width: 600px;
+    height: 536px;
+    z-index: 0;
   }
 }
 
 .example__before-after {
+  position: relative;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -188,11 +206,13 @@
 
   @media (min-width: @tablet-width) {
     width: 590px;
-    margin: 0 auto;
+    margin: 250px auto 0 auto;
+    padding-top: 361px;
   }
 
   @media (min-width: @desktop-width) {
     width: 520px;
+    padding-top: 130px;
   }
 }
 
@@ -233,14 +253,16 @@
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 @grey-extra-light;
     cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 4px 3px 0 @grey-extra-light;
+    }
+
+    &:active::before {
+      border: 1px solid @green;
+    }
   }
 
-  &:hover {
-    box-shadow: 0 4px 3px 0 @grey-extra-light;
-  }
-}
-
-@media (min-width: @tablet-width) {
   .example__range::before {
     position: absolute;
     content: "";
@@ -250,9 +272,13 @@
     border-radius: 50%;
     width: 20px;
     height: 20px;
+  }
+}
 
-    &:active {
-      border: 1px solid @green;
-    }
+@media (min-width: @tablet-width) {
+  .example__time-description {
+    width: 142px;
+    padding: 0;
+    margin-left: 5px;
   }
 }
