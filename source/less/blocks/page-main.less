@@ -9,6 +9,11 @@
   color: @black;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .page-main__subtitle {
@@ -18,4 +23,11 @@
   color: @black;
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 330px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

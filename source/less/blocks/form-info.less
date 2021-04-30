@@ -1,7 +1,14 @@
 .form-info {
-  margin-bottom: 26px;
+  border: none;
+  padding: 0;
+  margin-bottom: 13px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   @media (min-width: @desktop-width) {
     display: grid;
@@ -11,7 +18,8 @@
 }
 
 .form-info__list {
-  margin-bottom: 49px;
+  margin-top: 0;
+  margin-bottom: 36px;
   padding: 0;
   list-style: none;
   text-transform: uppercase;
@@ -24,4 +32,51 @@
 .form-info__item {
   display: grid;
   grid-template-columns: min-content 1fr;
+  margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.form-info__item-name,
+.form-info__item-weight,
+.form-info__item-age {
+  margin-top: 13px;
+  margin-right: 13px;
+}
+
+.form-info__item-weight {
+  width: 60px;
+
+  @media (min-width: @tablet-width) {
+    width: 91px;
+  }
+}
+
+.form-info__item-age {
+  width: 95px;
+
+  @media (min-width: @tablet-width) {
+    width: 120px;
+  }
+}
+
+.form-info__item-name-cat,
+.form-info__item-weight-cat,
+.form-info__item-age-cat {
+  padding: 13px 0 13px 15px;
+  border: 1px solid @silver-light-white;
+
+  &:hover {
+    border: 1px solid @grey-extra-dark;
+  }
+
+  &:focus {
+    border: 2px solid @grey-extra-extra-dark;
+  }
+
+  &:active {
+    border: 2px solid @red;
+  }
 }
