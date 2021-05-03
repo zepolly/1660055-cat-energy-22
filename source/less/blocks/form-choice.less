@@ -1,12 +1,38 @@
 .form-choice__submit {
   margin-bottom: 21px;
-  padding: 7px 44px;
+  padding: 10px 75px;
   color: @white;
   background-color: @green;
+  text-transform: uppercase;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 14px 65px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 14px 188px;
+  }
+
+  &:hover {
+    background-color: @green-dark;
+  }
+
+  &:active {
+    color: @white-transparent;
+  }
 }
 
 .form-choice__submit-note {
+  display: block;
   font-family: "Arial", sans-serif;
   line-height: 16px;
   color: @black;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+    margin-left: 61px;
+  }
 }

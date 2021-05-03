@@ -2,12 +2,26 @@
   position: relative;
   margin-bottom: 23px;
   border: none;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+  }
 }
 
 .contacts-owner__title {
   color: @black;
   font-size: 24px;
   line-height: 26px;
+
+  @media (max-width: @mobile-width-only) {
+    max-width: 190px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .contacts-owner__title::after {
@@ -34,7 +48,7 @@
     position: absolute;
     left: -50px;
     top: 15px;
-    width: 7%;
+    width: 5%;
     height: 2px;
     background-color: @green;
   }
@@ -49,6 +63,10 @@
   padding: 0;
   list-style: none;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 76px;
+  }
 
   @media (min-width: @desktop-width) {
     display: grid;
