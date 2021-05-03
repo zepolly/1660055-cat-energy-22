@@ -7,4 +7,103 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (max-width: @mobile-width-only) {
+    margin-left: -30px;
+    margin-right: -30px;
+    padding: 22px 30px 19px 30px;
+    border-top: 1px solid @grey;
+    border-bottom: 1px solid @grey;
+  }
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid @grey;
+    padding: 25px 30px 10px 27px;
+  }
+}
+
+.form-programs__item {
+  margin-bottom: 13px;
+  position: relative;
+  padding: 6px 0 6px 0;
+}
+
+.form-programs__item-radio-label {
+  margin-left: 45px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 60px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form-programs__item-radio:not(:disabled) + .form-programs__item-radio-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/radio-button.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form-programs__item-radio:checked + .form-programs__item-radio-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/radio-active.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form-programs__item-radio:disabled + .form-programs__item-radio-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/radio-dis.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form-programs__item-radio:checked:disabled + .form-programs__item-radio-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/radio-active-dis.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }

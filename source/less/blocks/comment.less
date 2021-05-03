@@ -1,13 +1,74 @@
 .comment {
+  position: relative;
   margin-bottom: 22px;
+  border: none;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+  }
 }
 
 .comment__title {
   color: @black;
   font-size: 24px;
   line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .comment__input {
   width: 100%;
+  margin-top: 37px;
+  border: 1px solid @silver-light-white;
+  min-height: 140px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 9px;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    padding-left: 19px;
+    line-height: 30px;
+    font-size: 20px;
+    min-height: 165px;
+    margin-top: 76px;
+  }
+}
+
+.comment__title::after {
+  content: "";
+  position: absolute;
+  right: -50px;
+  top: 15px;
+  width: 60%;
+  height: 2px;
+  background-color: @green;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: -110px;
+  }
+}
+
+.comment__title::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 15px;
+    width: 5%;
+    height: 2px;
+    background-color: @green;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -110px;
+  }
 }
