@@ -15,7 +15,6 @@
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 115px;
     z-index: 0;
   }
 }
@@ -49,12 +48,14 @@
 
 .promo__wrapper {
   padding: 0 36px;
+  position: relative;
 
   @media (min-width: @desktop-width) {
     margin-left: auto;
     margin-top: 110px;
     width: 500px;
-    padding: 0;
+    padding-left: 115px;
+    padding-top: 50px;
   }
 }
 
@@ -65,12 +66,16 @@
 
   @media (max-width: @mobile-width-only) {
     margin-top: -280px;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
     padding: 20px 170px 0 0;
+    max-width: 420px;
   }
 
   @media (min-width: @desktop-width) {
@@ -80,6 +85,11 @@
 
 .promo__subtitle {
   line-height: 14px;
+  text-transform: uppercase;
+
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 302px;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -89,6 +99,14 @@
 
 
 .promo__img {
+  position: absolute;
+  content: "";
+  left: 10%;
+  top: 150px;
+  width: 280px;
+  height: 270px;
+  z-index: 0;
+
   @media (min-width: @tablet-width) {
     position: absolute;
     content: "";
