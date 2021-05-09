@@ -37,16 +37,18 @@
       </nav>
     </header>
 
-    <main class="page-main container-form">
+    <main class="page-main">
 
-      <h1 class="page-main__title">Подбор программы</h1>
-      <p class="page-main__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <div class="container-form">
+        <h1 class="page-main__title">Подбор программы</h1>
+        <p class="page-main__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      </div>
 
       <section class="form">
 
         <form action="https://echo.htmlacademy.ru/" class="form-choice" method="get">
 
-          <fieldset class="form-info">
+          <fieldset class="form-info container-form">
             <ul class="form-info__list">
               <li class="form-info__item">
                 <label class="form-info__item-name" for="name">Имя:*</label>
@@ -81,7 +83,7 @@
 
           <fieldset class="contacts-owner">
             <legend class="contacts-owner__title">Контактные данные (владельца кота)</legend>
-              <ul class="contacts-owner__list">
+              <ul class="contacts-owner__list container-form">
                 <li class="contacts-owner__item">
                   <label class="contacts-owner__item-mail" for="mail">E-mail:*</label>
                   <input class="contacts-owner__item-mail-owner" id="mail" name="mail" placeholder="kuklachev@gmail.com" type="text">
@@ -101,13 +103,15 @@
 
           <fieldset class="comment">
             <legend class="comment__title">Комментарий</legend>
-            <label class="comment__label visually-hidden" for="comment">Введите комментарий</label>
-            <textarea class="comment__input" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="container-form">
+              <label class="comment__label visually-hidden" for="comment">Введите комментарий</label>
+              <textarea class="comment__input" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
           </fieldset>
 
           <fieldset class="additional-products">
             <legend class="additional-products__title">Дополнительно</legend>
-            <ul  class="additional-products__list">
+            <ul  class="additional-products__list container-form">
               <li class="additional-products__item">
                 <input class="additional-products__item-checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener" value="сахарозаменитель" checked>
                 <label class="additional-products__item-label" for="sweetener">сахарозаменитель</label>
@@ -126,10 +130,10 @@
               </li>
             </ul>
           </fieldset>
-
-          <button class="form-choice__submit" type="submit">Отправить заявку</button>
-          <small class="form-choice__submit-note">* — Обязательные поля</small>
-
+          <div class="container-form">
+            <button class="form-choice__submit" type="submit">Отправить заявку</button>
+            <small class="form-choice__submit-note" container-form>* — Обязательные поля</small>
+          </div>
         </form>
       </section>
 
