@@ -2,4 +2,58 @@
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 23px;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.table__element {
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid @grey-extra-light;
+  }
+}
+
+.table__value {
+  text-align: right;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid @grey-extra-light;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .table__string {
+    height: 32px;
+  }
+}
+
+.table-additional {
+  text-transform: capitalize;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 30%;
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 40%;
+    margin-right: 38px;
+    text-align: left;
+  }
+}
+
+.table-additional__value {
+  @media (min-width: @desktop-width) {
+    text-align: right;
+  }
 }
