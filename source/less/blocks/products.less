@@ -12,15 +12,45 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 63px 80px;
+    margin-bottom: 76px;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .products__wrapper {
+    display: grid;
+    grid-template-columns: 140px 1fr;
   }
 }
 
 .products__item {
-  display: grid;
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid @white-dark;
+    margin-left: -20px;
+    margin-right: -20px;
+    display: block;
+    padding: 5px 18px 30px 20px;
+  }
 
   @media (min-width: @tablet-width) {
-    background-color: @grey-light;
+    background-color: @grey-light-white;
+    text-align: center;
   }
+}
+
+.products__item:last-child {
+  @media (max-width: @mobile-width-only) {
+    border-bottom: 1px solid @white-dark;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+    border: 1px solid @grey-light-white;
+  }
+}
+
+.products__img {
+  margin: 25% auto 0 auto;
 }
 
 .products__title {
@@ -30,9 +60,22 @@
   color: @black-extra-light;
   font-size: 16px;
   line-height: 20px;
+
+  @media (max-width: @mobile-width-only) {
+    margin-right: 60px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 154px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .products__link {
+  display: block;
   text-transform: uppercase;
   padding: 10px 109px;
   font-family: "Oswald", sans-serif;
@@ -42,14 +85,27 @@
   line-height: 20px;
   background-color: @green;
 
-  &--show {
-    padding: 10px 94px;
-    background-color: @grey-light;
-    color: @grey-dark;
+  @media (min-width: @tablet-width) {
+    margin: 0 37px 40px 39px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 10px 53px;
+  }
+
+  &--show {
+    display: block;
+    padding: 10px 94px;
+    background-color: @grey-light-white;
+    color: @grey-dark;
+
+    @media (min-width: @tablet-width) {
+      padding: 8px 79px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 10px 30px;
+    }
   }
 }
 
@@ -61,9 +117,32 @@
   color: @black-light;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 134px;
+    font-size: 20px;
+    line-height: 22px;
+    margin: 49px auto 23px auto;
+  }
 }
 
 .products__subtitle-all {
   text-align: center;
   margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 167px;
+    margin: 0 auto 87px auto;
+  }
+}
+
+.products__plus {
+  display: block;
+  margin: 20px auto 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    height: auto;
+    margin: 52px auto 0 auto;
+  }
 }
