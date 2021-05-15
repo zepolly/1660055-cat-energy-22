@@ -38,7 +38,7 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    padding-top: 30px;
+    padding-top: 25px;
   }
 
   @media (min-width: @desktop-width) {
@@ -49,7 +49,15 @@
 .page-header__logo-image {
   margin-right: auto;
   width: 33px;
-  height: 37px;
+  height: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 70px;
+  }
 }
 
 .page-header__logo-name {
@@ -59,5 +67,11 @@
 
   @media (min-width: @tablet-width) {
     margin-left: 12px;
+    padding-top: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 14px;
+    padding-top: 22px;
   }
 }

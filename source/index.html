@@ -14,7 +14,11 @@
       <div class="page-header-index">
         <div class="page-header__logo-wrap">
           <a class="page-header__logo">
-            <img class="page-header__logo-image" src="img/logo-img-mobile.svg" width="34" height="38" alt="Логотип Кэт Энерджи">
+            <picture>
+              <source media="(min-width: 1220px)" srcset="img/logo-img-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-img-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-img-mobile.svg" width="34" height="38" alt="Логотип Кэт Энерджи">
+            </picture>
           </a>
           <a class="page-header__logo-label">
             <img class="page-header__logo-name" src="img/logo-words.svg" width="34" height="38" alt="Кэт Энерджи">
@@ -45,7 +49,11 @@
       <div class="promo__wrapper">
         <h1 class="promo__title">Функциональное питание для котов</h1>
         <p class="promo__subtitle">Занялся собой? Займись котом!</p>
-        <img class="promo__img" src="img/cat-energy-promo.svg" alt="Корм CAT ENERGY PRO">
+        <picture>
+          <source media="(min-width: 1220px)" srcset="img/food-desktop.jpg, img/food-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/food-tablet.jpg, img/food-tablet@2x.jpg 2x">
+          <img class="promo__img" src="img/food-mobile.jpg" srcset="img/food-mobile@2x.jpg 2x" alt="Корм CAT ENERGY PRO">
+        </picture>
         <a class="promo__link" href="form.html">Подобрать программу</a>
       </div>
     </section>
