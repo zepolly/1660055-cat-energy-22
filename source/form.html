@@ -13,7 +13,11 @@
     <header class="page-header container">
       <div class="page-header__logo-wrap">
         <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logo-img-mobile.svg" width="34" height="38" alt="Логотип Кэт Энерджи">
+          <picture>
+            <source media="(min-width: 1220px)" srcset="img/logo-img-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-img-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-img-mobile.svg" width="34" height="38" alt="Логотип Кэт Энерджи">
+          </picture>
         </a>
         <a class="page-header__logo-label">
           <img class="page-header__logo-name" src="img/logo-words.svg" width="34" height="38" alt="Кэт Энерджи">

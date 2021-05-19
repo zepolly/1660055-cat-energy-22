@@ -4,13 +4,27 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-green-gift@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     margin-bottom: 76px;
+    background-image: url("../img/cat-green-gift-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-green-gift-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: column;
+    background-image: url("../img/cat-green-gift-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-green-gift-desktop@2x.jpg");
+    }
   }
 }
 
