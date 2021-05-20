@@ -23,10 +23,14 @@
   content: "";
   display: block;
   background-color: @green;
-  background-image: url("../img/cat-green.jpg");
+  background-image: url("../img/green.svg"), url("../img/promo-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/green.svg"), url("../img/promo-mobile@2x.jpg");
+  }
 
   @media (max-width: @mobile-width-only) {
     width: 100%;
@@ -41,8 +45,13 @@
   @media (min-width: @desktop-width) {
     height: 694px;
     background-color: @green;
-    background-image: url("../img/cat-green.jpg");
+    background-image: url("../img/green.svg"), url("../img/promo-desktop.jpg");
     order: 2;
+    background-position: center, right;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/green.svg"), url("../img/promo-desktop@2x.jpg");
+    }
   }
 }
 
