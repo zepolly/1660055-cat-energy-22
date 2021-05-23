@@ -4,6 +4,7 @@
   background-image: url("../img/cat-green-gift.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 37px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/cat-green-gift@2x.jpg");
@@ -35,6 +36,14 @@
   position: relative;
   display: block;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 11px 154px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+  }
 }
 
 .gift__box::before {
@@ -73,9 +82,11 @@
 
   @media (min-width: @tablet-width) {
     text-align: left;
+    margin: 57px auto 51px auto;
   }
 
   @media (min-width: @desktop-width) {
     text-align: center;
+    margin: 32px auto 25px auto;
   }
 }

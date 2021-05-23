@@ -1,11 +1,10 @@
 .contacts-owner {
   position: relative;
-  margin-bottom: 23px;
   border: none;
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 46px;
   }
 }
 
@@ -19,8 +18,7 @@
 
   @media (max-width: @mobile-width-only) {
     max-width: 225px;
-    padding-left: 20px;
-    padding-right: 15px;
+    padding: 27px 15px 0 20px;
   }
 
   @media (min-width: @tablet-width) {
@@ -40,12 +38,15 @@
 
 .contacts-owner__list {
   margin-top: 35px;
+  margin-bottom: 0;
   padding: 0;
   list-style: none;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     margin-top: 76px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -61,19 +62,23 @@
   grid-template-columns: min-content 1fr;
   margin-bottom: 14px;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 21px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-top: 76px;
   }
 }
 
 .contacts-owner__item-mail {
-  width: 50px;
-  margin-right: 11px;
+  width: 80px;
+  margin-right: 1px;
   padding-top: 13px;
 }
 
 .contacts-owner__item-phone {
-  width: 68px;
+  width: 87px;
   margin-right: 8px;
   padding-top: 13px;
 }

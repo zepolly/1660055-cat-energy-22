@@ -17,6 +17,7 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 70px;
+    width: 480px;
   }
 }
 
@@ -55,6 +56,25 @@
       }
     }
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    border: none;
+    padding: 0;
+
+    &--active {
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 35px;
+        height: 2px;
+        background: @green;
+      }
+    }
+  }
 }
 
 .site-list__item-form {
@@ -80,7 +100,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        top: 30px;
+        top: 36px;
         height: 2px;
         background: @white;
       }
