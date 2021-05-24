@@ -27,6 +27,10 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 52px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 66px;
+  }
 }
 
 .form-info__item {
@@ -65,7 +69,7 @@
 .form-info__item-name-cat,
 .form-info__item-weight-cat,
 .form-info__item-age-cat {
-  padding: 13px 0 13px 15px;
+  padding: 13px 0 13px 14px;
   border: 1px solid @silver-light-white;
 
   &:hover {
@@ -78,5 +82,9 @@
 
   &:active {
     border: 2px solid @red;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 13px 0 13px 20px;
   }
 }

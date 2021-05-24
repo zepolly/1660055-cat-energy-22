@@ -14,7 +14,7 @@
 
   <body class="page-body">
 
-    <header class="page-header container">
+    <header class="page-header page-header-line container">
       <div class="page-header__logo-wrap">
         <a class="page-header__logo">
           <picture>
@@ -74,15 +74,15 @@
             <div class="form-programs">
               <ul class="form-programs__list">
                 <li class="form-programs__item">
-                  <input class="form-programs__item-radio visually-hidden" type="radio" name="weight-lost" id="weight-lost" value="похудение" checked>
+                  <input class="form-programs__item-radio visually-hidden" type="radio" name="radio" id="weight-lost" value="похудение" checked>
                   <label class="form-programs__item-radio-label" for="weight-lost">похудение</label>
                 </li>
                 <li class="form-programs__item">
-                  <input class="form-programs__item-radio visually-hidden" type="radio" name="weight-add" id="weight-add" value="Набор массы">
+                  <input class="form-programs__item-radio visually-hidden" type="radio" name="radio" id="weight-add" value="Набор массы">
                   <label class="form-programs__item-radio-label" for="weight-add">Набор массы</label>
                 </li>
                 <li class="form-programs__item">
-                  <input class="form-programs__item-radio visually-hidden" type="radio" name="need-advice" id="need-advice" value="Не знаю (Нужен ваш совет)">
+                  <input class="form-programs__item-radio visually-hidden" type="radio" name="radio" id="need-advice" value="Не знаю (Нужен ваш совет)">
                   <label class="form-programs__item-radio-label" for="need-advice">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
@@ -90,7 +90,9 @@
           </fieldset>
 
           <fieldset class="contacts-owner line">
-            <legend class="contacts-owner__title">Контактные данные (владельца кота)</legend>
+            <div class="additional-products__container">
+              <legend class="contacts-owner__title">Контактные данные (владельца кота)</legend>
+            </div>
             <ul class="contacts-owner__list container-form">
               <li class="contacts-owner__item">
                 <label class="contacts-owner__item-mail" for="mail">E-mail:*</label>
@@ -109,16 +111,20 @@
             </ul>
           </fieldset>
 
-          <fieldset class="comment line-bottom">
-            <legend class="comment__title">Комментарий</legend>
+          <fieldset class="comment line-comment">
+            <div class="additional-products__container">
+              <legend class="comment__title">Комментарий</legend>
+            </div>
             <div class="container-form">
               <label class="comment__label visually-hidden" for="comment">Введите комментарий</label>
               <textarea class="comment__input" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
 
-          <fieldset class="additional-products line-bottom">
-            <legend class="additional-products__title">Дополнительно</legend>
+          <fieldset class="additional-products line-products">
+            <div class="additional-products__container">
+              <legend class="additional-products__title">Дополнительно</legend>
+            </div>
             <ul  class="additional-products__list container-form">
               <li class="additional-products__item">
                 <input class="additional-products__item-checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener" value="сахарозаменитель" checked>
@@ -138,7 +144,7 @@
               </li>
             </ul>
           </fieldset>
-          <div class="container-form">
+          <div class="form-choice__submits container-form">
             <button class="form-choice__submit" type="submit">Отправить заявку</button>
             <small class="form-choice__submit-note">* — Обязательные поля</small>
           </div>

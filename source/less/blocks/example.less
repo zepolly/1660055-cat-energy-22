@@ -9,7 +9,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-image: linear-gradient(to bottom, @white, @white 213px, @silver 213px, @silver);
+    background-image: linear-gradient(to bottom, @white, @white 194px, @silver 194px, @silver);
   }
 }
 
@@ -54,6 +54,18 @@
 @media (min-width: @desktop-width) {
   .example__wrapper:first-child {
     padding: 0 0 60px 0;
+  }
+}
+
+.example__description-shift {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 

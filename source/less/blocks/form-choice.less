@@ -1,3 +1,7 @@
+.form-choice__submits {
+  position: relative;
+}
+
 .form-choice__submit {
   margin-bottom: 21px;
   padding: 11px 78px;
@@ -8,7 +12,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 11px 65px;
-    margin-bottom: 72px;
+    margin-bottom: 68px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -37,12 +41,14 @@
   font-size: 14px;
 
   @media (min-width: @tablet-width) {
-    display: inline;
-    margin-left: 57px;
+    position: absolute;
+    top: 17px;
+    right: 175px;
     font-size: 16px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 76px;
+    top: 17px;
+    right: 500px;
   }
 }
