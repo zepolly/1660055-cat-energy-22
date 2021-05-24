@@ -18,6 +18,12 @@
   }
 }
 
+.page-header-line {
+  @media (max-width: @mobile-width-only) {
+    border-bottom: 1px solid @silver;
+  }
+}
+
 .page-header-index {
   @media (min-width: @tablet-width) {
     display: grid;
@@ -34,7 +40,7 @@
 .page-header__logo-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 12px 0 16px 0;
+  padding: 12px 0 14px 0;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -74,4 +80,8 @@
     margin-left: 14px;
     padding-top: 22px;
   }
+}
+
+.page-header__logo-label {
+  text-align: center;
 }

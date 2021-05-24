@@ -1,26 +1,41 @@
 .table-additional {
-  font-size: 12px;
-  line-height: 16px;
-  margin-bottom: 15px;
-  text-transform: capitalize;
-  width: 100%;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 21px;
+  text-transform: lowercase;
+  width: 103%;
+  margin-left: -3px;
 
   @media (min-width: @tablet-width) {
-    width: 30%;
+    width: 55%;
     text-align: right;
     font-size: 16px;
     line-height: 20px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 40%;
+    width: 44%;
     margin-right: 38px;
     text-align: left;
   }
 }
 
-.table-additional__value {
-  @media (min-width: @desktop-width) {
+.table-additional__string {
+  @media (min-width: @tablet-width) {
     text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
+}
+
+.table-additional__value {
+  text-align: right;
+  width: 99px;
+
+  @media (min-width: @tablet-width) {
+    width: 88px;
   }
 }

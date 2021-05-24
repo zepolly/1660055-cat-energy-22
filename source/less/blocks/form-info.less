@@ -1,7 +1,6 @@
 .form-info {
   border: none;
   padding: 0;
-  margin-bottom: 13px;
   display: flex;
   flex-direction: column;
 
@@ -20,13 +19,17 @@
 
 .form-info__list {
   margin-top: 0;
-  margin-bottom: 36px;
+  margin-bottom: 9px;
   padding: 0;
   list-style: none;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 72px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 66px;
   }
 }
 
@@ -51,7 +54,7 @@
   width: 60px;
 
   @media (min-width: @tablet-width) {
-    width: 91px;
+    width: 81px;
   }
 }
 
@@ -66,7 +69,7 @@
 .form-info__item-name-cat,
 .form-info__item-weight-cat,
 .form-info__item-age-cat {
-  padding: 13px 0 13px 15px;
+  padding: 13px 0 13px 14px;
   border: 1px solid @silver-light-white;
 
   &:hover {
@@ -79,5 +82,9 @@
 
   &:active {
     border: 2px solid @red;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 13px 0 13px 20px;
   }
 }

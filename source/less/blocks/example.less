@@ -1,13 +1,15 @@
 .example {
   position: relative;
   background-color: @silver;
+  margin-top: 34px;
 
   @media (min-width: @tablet-width) {
-    background-color: @white;
+    background-image: linear-gradient(to bottom, @white, @white 604px, @silver 100px, @silver);
+    margin-top: -28px;
   }
 
   @media (min-width: @desktop-width) {
-    background-image: linear-gradient(to bottom, @white, @white 213px, @silver 213px, @silver);
+    background-image: linear-gradient(to bottom, @white, @white 194px, @silver 194px, @silver);
   }
 }
 
@@ -29,16 +31,19 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
     margin-bottom: 146px;
+    margin-top: 57px;
   }
 }
 
 .example__description {
   color: @grey-extra-extra-dark;
+  margin-top: 33px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -52,6 +57,18 @@
   }
 }
 
+.example__description-shift {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .example__wrap {
   margin-top: 25px;
   display: grid;
@@ -60,8 +77,12 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 162px 162px;
-    gap: 42px;
+    gap: 43px;
     margin-top: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 66px;
   }
 }
 
@@ -70,7 +91,7 @@
   width: 124px;
 
   @media (min-width: @tablet-width) {
-    width: 162px;
+    width: 175px;
   }
 }
 
@@ -88,6 +109,12 @@
   border-radius: 3px;
   padding: 15px 10px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    padding: 17px 10px;
+  }
 }
 
 .example__weight-description,
@@ -130,44 +157,59 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 11px;
 
   @media (min-width: @tablet-width) {
     width: 174px;
     text-align: right;
     font-size: 20px;
     margin-left: auto;
-    margin-top: -60px;
+    margin-top: -83px;
   }
 
   @media (min-width: @desktop-width) {
     width: 330px;
-    margin-top: 55px;
+    margin-top: 44px;
     text-align: left;
     margin-left: 0;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .example__value {
+.example__value {
+  @media (min-width: @tablet-width) {
+    line-height: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
     display: block;
     width: 90px;
     margin-left: auto;
     margin-top: -20px;
+    line-height: 21px;
   }
 }
 
 .example__wrapper:last-child {
   text-align: center;
+  margin-top: 40px;
+
+  @media (max-width: @mobile-width-only) {
+    min-width: 311px;
+    margin-left: -20px;
+  }
 
   @media (min-width: @tablet-width) {
     text-align: center;
     margin-left: -30px;
     margin-right: -30px;
     padding-bottom: 30px;
+    margin-top: 67px;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: auto;
+    margin-top: 0;
+    margin-right: -48px;
   }
 }
 
@@ -181,7 +223,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 600px;
+    width: 700px;
     height: auto;
   }
 }
@@ -196,15 +238,25 @@
   line-height: 20px;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 11px auto 0 auto;
+  padding-bottom: 11px;
+  width: 196px;
+
+  @media (max-width: @mobile-width-only) {
+    padding-left: 13px;
+  }
+
 
   @media (min-width: @tablet-width) {
-    width: 590px;
-    margin-top: -60px;
+    width: 570px;
+    margin-top: -88px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 520px;
+    width: 571px;
+    margin: -133px 0 0 82px;
   }
 }
 
@@ -212,6 +264,10 @@
 .example__after {
   margin-top: 18px;
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px dotted @grey-semi-transparent;
+  }
 }
 
 .example__toggle {
@@ -224,11 +280,11 @@
   @media (min-width: @tablet-width) {
     position: relative;
     background-image: none;
-    height: 6px;
+    height: 8px;
     background-color: @grey-light;
     width: 428px;
     border-radius: 2px;
-    margin-top: 25px;
+    margin-top: 28px;
   }
 }
 
@@ -236,11 +292,11 @@
   .example__range {
     position: absolute;
     top: -10px;
-    left: 45%;
-    width: 6px;
-    height: 6px;
+    left: 47%;
+    width: 9px;
+    height: 9px;
+    border: 10px solid @white;
     padding: 0;
-    border: 8px solid @white;
     background-color: @green;
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 @grey-extra-light;
@@ -258,16 +314,14 @@
   .example__range::before {
     position: absolute;
     content: "";
-    top: -8px;
-    left: -8px;
+    top: -11px;
+    left: -11px;
+    width: 30px;
+    height: 30px;
     border: 1px solid @grey-extra-light;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
   }
-}
 
-@media (min-width: @tablet-width) {
   .example__time-description {
     width: 142px;
     padding: 0;
