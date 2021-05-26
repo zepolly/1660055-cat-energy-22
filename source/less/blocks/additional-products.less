@@ -11,19 +11,21 @@
 
 .additional-products__title {
   position: relative;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   background-color: @white;
   z-index: 3;
+  margin: 0;
+  max-width: 147px;
 
   @media (max-width: @mobile-width-only) {
-    max-width: 225px;
     padding: 18px 15px 0 20px;
   }
 
   @media (min-width: @tablet-width) {
+    max-width: 212px;
     font-size: 36px;
     line-height: 36px;
     margin-left: 30px;
@@ -116,7 +118,7 @@
 .additional-products__subtitle {
   text-transform: uppercase;
   color: @black-extra-light;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -134,7 +136,7 @@
   color: @white;
   background-color: @green;
   padding: 12px 106px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
 
   @media (min-width: @tablet-width) {
     display: block;
